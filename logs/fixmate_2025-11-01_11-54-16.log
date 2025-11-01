@@ -1,0 +1,25 @@
+ErrorMessage: The instance ID i-1234567890abcdef0 does not exist
+
+FixMate v1.0
+
+Diagnosis:
+This error indicates that the instance with the specified ID (i-1234567890abcdef0) does not exist in the AWS account or region that you are trying to access.
+
+Fix Steps:
+1. Double-check the instance ID:
+   - Ensure that you have copied the correct instance ID. Mistyping the instance ID can lead to this error. Check for any extra spaces or characters.
+   
+2. Verify the AWS region:
+   - Make sure you are looking for the instance in the correct AWS region. Instances are specific to the region in which they were launched. Switch to the correct region if needed.
+
+3. Check instance termination:
+   - Verify if the instance has been terminated. Once an instance is terminated, it no longer exists and cannot be accessed.
+   
+4. Confirm AWS account:
+   - Ensure that the instance is associated with the AWS account you are currently accessing. If you are using multiple AWS accounts, switch to the correct account for the instance.
+   
+5. Look for recent activities:
+   - Check if the instance was recently terminated or if any actions were taken that could have affected the instance's availability.
+
+Reference Links:
+- AWS Documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Concepts.html#instance-lifecycle

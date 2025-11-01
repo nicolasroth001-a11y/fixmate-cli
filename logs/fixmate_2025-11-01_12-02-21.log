@@ -1,0 +1,21 @@
+FixMate v1.1
+ErrorMessage: The instance ID i-1234567890abcdef0 does not exist
+
+FixMate v1.0
+
+Diagnosis:
+The error "The instance ID i-1234567890abcdef0 does not exist" indicates that AWS cannot find the specified instance with the given ID.
+
+Fix Steps:
+1. Verify the correctness of the instance ID: Double-check the instance ID (i-1234567890abcdef0) provided in your command or script. Ensure there are no typos or extra spaces.
+   
+2. Check the region: If you are using the AWS CLI or SDK, verify that you are querying the correct AWS region where the instance is deployed. Instances are region-specific, and the instance may exist in a different region than where you are currently querying.
+   
+3. Confirm AWS account access: Ensure that the AWS credentials used to access the account have the necessary permissions to describe the EC2 instances. If the credentials are incorrect or lack the required permissions, you may receive an error stating that the instance does not exist.
+   
+4. Look for terminated instances: If the instance was recently terminated, AWS may still have information about the terminated instance in the system, but the instance itself no longer exists. Verify the status of the instance to see if it has been terminated.
+   
+5. If the issue persists, consider checking the CloudTrail logs or EC2 instance event history for any information on the instance's creation, termination, or any related events that may provide insight into why AWS cannot find the instance.
+
+Reference Links:
+- AWS CLI: https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html
