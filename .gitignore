@@ -1,0 +1,13 @@
+﻿# Ignore logs and transcripts
+logs/
+*.log
+*.txt
+
+# Ignore temp and backup files
+*.ps1~
+*.tmp
+*.bak
+
+# Ignore system files
+.DS_Store
+Thumbs.db
